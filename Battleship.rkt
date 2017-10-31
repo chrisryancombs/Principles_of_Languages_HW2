@@ -113,14 +113,80 @@
 ;; checks for sunk ships (which involves another update to mark the ship sunk), and checks for win/loss.
 ;; Game play = calling this function repeatedly, with P and C alternating as turns are taken.
 (define bomb
-  (lambda (r c bombee) bombee
-
+  (lambda (r c bombee)
+    (let ((tOcean (getOcean bombee)))
+      (cond
+        ((checkUnder r c tOcean)(updateList (getpos r c tOcean) bombee) (updateBoard r c bombee) (win?))
+      )
+    )
+  )
+)
 ;; *** you need to write this, plus any helper functions you want ****
 ;; *** Obviously your bomb (or related helpers) will want to set! the players
 ;; board, and maybe (if ships sunk) that players shipslist.  That way winning
 ;; can be noticed simply:  you lose if your shipslist ends up null.
-     ))
+(define win?
+  (lambda ()
+    (cond
+      ((null? pShiplist) (display "The Computer Wins!") #t)
+      ((null? cShiplist) (display "The Player Wins!") #t)
+      (else #f)
+      )
+    )
+  )
 
+(define getOcean
+  (lambda (char)
+    (if (equal? char 'P) pOcean cOcean)
+    )
+  )
+
+
+(define checkUnder
+  (lambda (r c target)
+    (let ((val (getpos r c target)))
+      (cond
+        ((or(equal? 'A val)(equal? 'B val)(equal? 'C val)(equal? 'D val)) (display "\nThat's a hit!\n")#t)
+        (else #f)
+      )
+    )
+  )
+)
+
+(define updateList
+  (lambda (letter bombee)
+    (cond
+      ((equal? bombee 'P)(set! pShiplist (checkzeros(findletter letter pShiplist))))
+      (else (set! cShiplist (checkzeros(findletter letter cShiplist)))) 
+      )
+    )
+  )
+
+(define findletter
+  (lambda (letter lst)
+    (cond
+      ((null? lst) lst)
+      ((equal? (car(car lst)) letter) (cons (list letter (-(car(cdr(car lst)))1)) (cdr lst)))
+      (else (cons (car lst) (findletter letter (cdr lst)))))))
+
+(define checkzeros
+  (lambda (lst)
+    (cond
+      ((null? lst) lst)
+      ((equal? (car(cdr(car lst))) 0) (cdr lst))
+      (else (cons (car lst) (checkzeros(cdr lst)))) 
+  )
+  )
+  )
+
+(define updateBoard
+  (lambda (r c bombee)
+    (cond
+      ((equal? bombee 'P)(set! pOcean (markchar r c 'X pOcean)))
+      (else (set! cOcean (markchar r c 'X cOcean))) 
+      )
+    )
+  )
 ;;; *** I wrote about 4-5 helper functions to go with "bomb" to take care of various things
 ;; that need to happen in bomb, i.e., figure out whats under the bomb, marking the board, 
 ;; and checking for wins.
@@ -137,8 +203,31 @@
 ;; to see if row,col is valid (returns #f if not), and then recursively digs down into the board to place
 ;; the given character at the target location.  It returns the Ocean with the given character updated.
 ;; Used when placing ships, dropping bombs, etc, whenever you need to place a character on the board.
-(define (markchar r c char Ocean)
+(define markchar
+  (lambda (r c char Ocean)
+    (cond
+      ((equal? #f (getpos r c Ocean)) #f)
+      (else (rowreplace r c char Ocean))
+    )
+  )
+)
 
+(define rowreplace
+  (lambda (r c char Ocean)
+    (cond ((null? Ocean) Ocean)
+          ((= r 1) (cons (replace c char (car Ocean)) (cdr Ocean)))
+          (else (cons (car Ocean)(rowreplace (- r 1) c char (cdr Ocean))))
+    )
+  )
+)
+
+(define replace
+  (lambda (c char row)
+    (cond ((null? row) row)
+          ((= c 1) (cons char (cdr row)))
+          (else(cons (car row)(replace (- c 1) char (cdr row))))
+    )
+  )
 )
 
 
@@ -326,3 +415,5 @@
 (set! pOcean (placeships pShiplist pOcean))
 (set! cOcean (placeships cShiplist cOcean))
 (stat)
+(cheat)
+(play)
