@@ -125,6 +125,8 @@
 ;; *** Obviously your bomb (or related helpers) will want to set! the players
 ;; board, and maybe (if ships sunk) that players shipslist.  That way winning
 ;; can be noticed simply:  you lose if your shipslist ends up null.
+
+;; Check for a player or computer win and display the apprpriate message if true
 (define win?
   (lambda ()
     (cond
@@ -135,13 +137,14 @@
     )
   )
 
+;; Returns the appropriate ocean depending on input 'P for player or 'C for computer
 (define getOcean
   (lambda (char)
     (if (equal? char 'P) pOcean cOcean)
     )
   )
 
-
+;; Check if an attack has landed on a valid target
 (define checkUnder
   (lambda (r c target)
     (let ((val (getpos r c target)))
@@ -153,6 +156,7 @@
   )
 )
 
+;; Update list for attacked target
 (define updateList
   (lambda (letter bombee)
     (cond
@@ -162,6 +166,7 @@
     )
   )
 
+;; Helper to find and update count for a letter
 (define findletter
   (lambda (letter lst)
     (cond
@@ -169,16 +174,18 @@
       ((equal? (car(car lst)) letter) (cons (list letter (-(car(cdr(car lst)))1)) (cdr lst)))
       (else (cons (car lst) (findletter letter (cdr lst)))))))
 
+;; Helper to remove any ships at count zero and report it 
 (define checkzeros
   (lambda (lst)
     (cond
       ((null? lst) lst)
-      ((equal? (car(cdr(car lst))) 0) (cdr lst))
+      ((equal? (car(cdr(car lst))) 0) (display "The following ship has sunk: ") (display (car(car lst))) (display "!\n") (cdr lst))
       (else (cons (car lst) (checkzeros(cdr lst)))) 
   )
   )
   )
 
+;; Update the attacked ship's board
 (define updateBoard
   (lambda (r c bombee)
     (cond
@@ -206,7 +213,7 @@
 (define markchar
   (lambda (r c char Ocean)
     (cond
-      ((equal? #f (getpos r c Ocean)) #f)
+      ((equal? #f (getpos r c Ocean))  #f)
       (else (rowreplace r c char Ocean))
     )
   )
@@ -415,5 +422,4 @@
 (set! pOcean (placeships pShiplist pOcean))
 (set! cOcean (placeships cShiplist cOcean))
 (stat)
-(cheat)
 (play)
