@@ -1,0 +1,534 @@
+BATTLESHIP sample output.  
+
+Welcome to DrRacket, version 6.4 [3m].
+Language: Pretty Big; memory limit: 128 MB.
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-----) 
+b(---------)      b(---------) 
+c(---------)      c(----BBB--) 
+d(---------)      d(---------) 
+e(---------)      e(---------) 
+f(---------)      f(-----DD--) 
+( 123456789)      ( 123456789) 
+> (play)
+Enter your shot as: row col
+b5
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 4)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-----) 
+b(----o----)      b(---------) 
+c(---------)      c(----BBB--) 
+d(---------)      d(---o-----) 
+e(---------)      e(---------) 
+f(---------)      f(-----DD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e7
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (2 9)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-----) 
+b(----o----)      b(--------o) 
+c(---------)      c(----BBB--) 
+d(---------)      d(---o-----) 
+e(------X--)      e(---------) 
+f(---------)      f(-----DD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e6
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (6 6)  
+KAAABOOMM. It's a hit!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-----) 
+b(----o----)      b(--------o) 
+c(---------)      c(----BBB--) 
+d(---------)      d(---o-----) 
+e(-----XX--)      e(---------) 
+f(---------)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e5
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (1 6)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-o---) 
+b(----o----)      b(--------o) 
+c(---------)      c(----BBB--) 
+d(---------)      d(---o-----) 
+e(----oXX--)      e(---------) 
+f(---------)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e8
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (3 2)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-o---) 
+b(----o----)      b(--------o) 
+c(---------)      c(-o--BBB--) 
+d(---------)      d(---o-----) 
+e(----oXXX-)      e(---------) 
+f(---------)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e9
+KAAABOOMM. It's a hit!
+Blubb blubb blubb, ship sunk!
+My turn! I'm bombing (4 4)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-o---) 
+b(----o----)      b(--------o) 
+c(---------)      c(-o--BBB--) 
+d(---------)      d(---o-----) 
+e(----ossss)      e(---------) 
+f(---------)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+c2
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (1 7)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(--------o) 
+c(-o-------)      c(-o--BBB--) 
+d(---------)      d(---o-----) 
+e(----ossss)      e(---------) 
+f(---------)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f7
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (2 1)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o-------o) 
+c(-o-------)      c(-o--BBB--) 
+d(---------)      d(---o-----) 
+e(----ossss)      e(---------) 
+f(------X--)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f8
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (4 7)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o-------o) 
+c(-o-------)      c(-o--BBB--) 
+d(---------)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(------XX-)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f9
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (2 5)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(-o--BBB--) 
+d(---------)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(------XXo)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f6
+KAAABOOMM. It's a hit!
+Blubb blubb blubb, ship sunk!
+My turn! I'm bombing (3 1)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(---------)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(-----ssso)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+d3
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 7)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o------)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(-----ssso)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+d8
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (6 6)  
+KAAABOOMM. It's a hit!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---------)      a(AAAA-oo--) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(-----ssso)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+a4
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (1 8)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o-----)      a(AAAA-ooo-) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(----ossss)      e(---------) 
+f(-----ssso)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+a8
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (5 3)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAAA-ooo-) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(----ossss)      e(--o------) 
+f(-----ssso)      f(-----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e1
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (6 1)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAAA-ooo-) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(o---ossss)      e(--o------) 
+f(-----ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f2
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (1 3)  
+KAAABOOMM. It's a hit!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(----o----)      b(o---o---o) 
+c(-o-------)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(o---ossss)      e(--o------) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+c7
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (5 1)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(----o----)      b(o---o---o) 
+c(-o----o--)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(o---ossss)      e(o-o------) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+b2
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (3 1)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(-o--o----)      b(o---o---o) 
+c(-o----o--)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(o---ossss)      e(o-o------) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+b8
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (5 9)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o----o--)      c(oo--BBB--) 
+d(--o----o-)      d(---o--o--) 
+e(o---ossss)      e(o-o-----o) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+d5
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 7)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o----o--)      c(oo--BBB--) 
+d(--o-o--o-)      d(---o--o--) 
+e(o---ossss)      e(o-o-----o) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+c4
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 2)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(---o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--o--)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--o--) 
+e(o---ossss)      e(o-o-----o) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+a2
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (5 2)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--o--)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--o--) 
+e(o---ossss)      e(ooo-----o) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+e3
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 8)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--o--)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(ooo-----o) 
+f(-o---ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+f4
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (4 7)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--o--)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(ooo-----o) 
+f(-o-o-ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+c8
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (5 4)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o---o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--oo-)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo----o) 
+f(-o-o-ssso)      f(o----dD--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+a6
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (6 7)  
+KAAABOOMM. It's a hit!
+Blubb blubb blubb, ship sunk!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-o--o--o-)      b(o---o---o) 
+c(-o-o--oo-)      c(oo--BBB--) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo----o) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+b3
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (3 8)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-oo-o--o-)      b(o---o---o) 
+c(-o-o--oo-)      c(oo--BBBo-) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo----o) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+c6
+sploosh!  Dang!  Missed like a loser!
+My turn! I'm bombing (3 7)  
+KAAABOOMM. It's a hit!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-oo-o--o-)      b(o---o---o) 
+c(-o-o-ooo-)      c(oo--BBbo-) 
+d(--o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo----o) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+d1
+KAAABOOMM. It's a hit!
+My turn! I'm bombing (2 8)  
+sploosh!  Dang!  Missed like a loser!
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-oo-o--o-)      b(o---o--oo) 
+c(-o-o-ooo-)      c(oo--BBbo-) 
+d(X-o-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo----o) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+d2
+KAAABOOMM. It's a hit!
+Blubb blubb blubb, ship sunk!
+Nice work, you whupped me
+My turn! I'm bombing (5 8)  
+sploosh!  Dang!  Missed like a loser!
+Nice work, you whupped me
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-oo-o--o-)      b(o---o--oo) 
+c(-o-o-ooo-)      c(oo--BBbo-) 
+d(sso-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo---oo) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Enter your shot as: row col
+q
+My turn! I'm bombing (1 5)  
+
+   Opponent        Your ships 
+  ----------       ----------- 
+( 123456789)      ( 123456789) 
+a(-o-o-o-o-)      a(AAaA-ooo-) 
+b(-oo-o--o-)      b(o---o--oo) 
+c(-o-o-ooo-)      c(oo--BBbo-) 
+d(sso-o--o-)      d(-o-o--oo-) 
+e(o-o-ossss)      e(oooo---oo) 
+f(-o-o-ssso)      f(o----ss--) 
+( 123456789)      ( 123456789) 
+Thanks for playing
+> 

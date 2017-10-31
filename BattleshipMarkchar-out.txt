@@ -1,0 +1,26 @@
+BATTLESHIP sample output for the "markchar" helper function.
+Welcome to DrRacket, version 6.3 [3m].
+Language: Pretty Big; memory limit: 128 MB.
+
+> cOcean
+((- - - - - - - - -) (- - - - - - - - -) (- - - - - - - - -) (B B B - - - - - -) (- - - - - - - - -) (A A A A D D - - -))
+
+
+> (markchar 1 5 'M cOcean)
+((- - - - M - - - -) (- - - - - - - - -) (- - - - - - - - -) (B B B - - - - - -) (- - - - - - - - -) (A A A A D D - - -))
+
+
+> (markchar 3 5 'F cOcean)
+((- - - - - - - - -) (- - - - - - - - -) (- - - - F - - - -) (B B B - - - - - -) (- - - - - - - - -) (A A A A D D - - -))
+
+
+> (markchar 24 45 'G cOcean)
+#f
+
+
+> cOcean
+((- - - - - - - - -) (- - - - - - - - -) (- - - - - - - - -) (B B B - - - - - -) (- - - - - - - - -) (A A A A D D - - -))
+> 
+
+;; Note that markchar never CHANGED (that is, with set!) the passed in board itself...it just returned the updated
+;; board (which is just a nested list!) as its return result to the caller. It's up to the caller to do something with it.
